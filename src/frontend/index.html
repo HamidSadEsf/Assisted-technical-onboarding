@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Onboarding Pipeline</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="app-header">
+        <div class="logo">IntegrationFlow<span>AI</span></div>
+        <div class="header-actions">
+            <button id="demo-btn" class="btn-secondary demo-pulse">Auto-Run Demo</button>
+            <div class="status-badge">Senior Manager Review Required</div>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Upload Section -->
+        <section id="upload-section" class="card">
+            <h2>Technical Onboarding</h2>
+            <p>Upload partner API documentation (.md) to map to our internal schema.</p>
+            <div class="upload-area">
+                <input type="file" id="file-input" accept=".md">
+                <button id="upload-btn" class="btn-primary">Process Document</button>
+            </div>
+            <div id="loading" class="hidden">
+                <div class="spinner"></div>
+                <span id="loading-text">Running Sanitization & RAG Pipeline...</span>
+            </div>
+            <div id="error-msg" class="error hidden"></div>
+        </section>
+
+        <!-- Explainability UI (Side by Side) -->
+        <section id="results-section" class="results-grid hidden">
+            <!-- Left Panel: Source Document -->
+            <div class="panel source-panel">
+                <div class="panel-header">
+                    <h3>Source Documentation</h3>
+                    <div class="badges" id="redaction-badges"></div>
+                </div>
+                <pre id="source-text" class="code-block"></pre>
+            </div>
+
+            <!-- Right Panel: Mapped Schema -->
+            <div class="panel mapping-panel">
+                <div class="panel-header">
+                    <h3>Deterministic Mapped Schema</h3>
+                    <span class="badge success">Schema Validated</span>
+                </div>
+                <pre id="mapped-json" class="code-block json"></pre>
+                
+                <div class="approval-actions">
+                    <button id="reject-btn" class="btn-secondary">Reject & Modify</button>
+                    <button id="approve-btn" class="btn-primary success">Approve Mapping</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
