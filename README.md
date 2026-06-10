@@ -1,11 +1,11 @@
-# AI-Assisted Technical Onboarding Pipeline | Antigravity Case Study
+# AI-Assisted Technical Onboarding Pipeline
 
 [![Product Management](https://img.shields.io/badge/Role-Senior%20Technical%20PM-blueviolet)](#)
 [![System Design](https://img.shields.io/badge/Focus-Agentic%20Operations-blue)](#)
 [![Status](https://img.shields.io/badge/State-Portfolio%20Ready-success)](#)
 
 ## 🚀 Project Vision
-The **Antigravity Technical Onboarding Pipeline** is a strategic solution designed to eliminate the "manual mapping tax" in B2B fintech integrations. By leveraging retrieval-augmented generation (RAG) and deterministic validation loops, the system automates the translation of unstructured partner API documentation into internal technical schemas. 
+The **Technical Onboarding Pipeline** is a strategic solution designed to eliminate the "manual mapping tax" in B2B fintech integrations. By leveraging retrieval-augmented generation (RAG) and deterministic validation loops, the system automates the translation of unstructured partner API documentation into internal technical schemas. 
 
 This project demonstrates how AI can be deployed not just for "chat," but as a core operational engine that balances **probabilistic reasoning** (extracting meaning from docs) with **deterministic execution** (strict schema compliance).
 
@@ -25,9 +25,9 @@ In B2B partnerships, "Time to First Call" (TTFC) is a critical revenue metric. H
 
 ## 📊 Product Impact
 By reimagining this workflow, we achieve significant operational leverage:
-- **80% Reduction in TTFC:** Accelerated the onboarding lifecycle from weeks to days.
-- **15+ Engineering Hours Saved:** Redirected high-value talent from manual mapping to core feature development.
-- **100% Security Compliance:** Local regex/NER sanitization ensures 0% PII leakage to external APIs.
+- **Reduction in TTFC:** Accelerated the onboarding lifecycle from weeks to days.
+- **Engineering Hours Saved:** Redirected high-value talent from manual mapping to core feature development.
+- **ecurity Compliance:** Local regex/NER sanitization ensures 0% PII leakage to external APIs.
 - **Predictable Outcomes:** A 3-strike deterministic validation loop ensures that only valid, schema-compliant JSON reaches the human reviewer.
 
 ---
